@@ -14,6 +14,7 @@ $body-color: #333;
 $body-bg: #fff;
 $border-radius: .4rem;
 $success: #7952b3;
+$green:#429A2F;
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
 @import "bootstrap/scss/mixins"; // Required
@@ -57,4 +58,15 @@ $success: #7952b3;
 @import "example-component";
 body {
     padding: 3rem 1.5rem;
+}
+
+// Customising bootstrap default classes
+.btn-primary {
+    @include button-variant($green, darken($green, 0%));
+}
+
+.rounded-circle {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
 }
