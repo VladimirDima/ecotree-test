@@ -12,7 +12,6 @@ $enable-shadows: true;
 // Customize some defaults
 $body-color: #333;
 $body-bg: #fff;
-$border-radius: .4rem;
 $success: #7952b3;
 $cta-green:#429A2F;
 $primary:#F2F9F2;
@@ -44,7 +43,7 @@ $primary:#F2F9F2;
 // @import "bootstrap/scss/progress";
 // @import "bootstrap/scss/media";
 // @import "bootstrap/scss/list-group";
-@import "bootstrap/scss/close";
+// @import "bootstrap/scss/close";
 // @import "bootstrap/scss/toasts";
 @import "bootstrap/scss/modal"; // Requires transitions
 // @import "bootstrap/scss/tooltip";
@@ -56,6 +55,7 @@ $primary:#F2F9F2;
 //
 // Custom styles
 @import "testimonial-card";
+@import "custom-utility-classes";
 // Customising bootstrap default classes
 .btn-primary {
     @include button-variant($cta-green, darken($cta-green, 0%));
@@ -64,4 +64,13 @@ $primary:#F2F9F2;
 // Custom css
 .green-section {
     background: $primary;
+}
+
+// How it works section
+.line {
+    display: none;
+    right: 20%;
+    @include media-breakpoint-up(md) {
+        display: block;
+    }
 }
