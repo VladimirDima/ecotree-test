@@ -1,0 +1,27 @@
+.testimonial-card-img-wrapper {
+    order: 2;
+    .avatar-img {
+        width: 8rem;
+        height: 8rem;
+    }
+    @include media-breakpoint-up(md) {
+        .testimonial-name-mobile {
+            display: none;
+        }
+    }
+}
+
+.testimonial-card-content {
+    order: 1;
+    .testimonial-name {
+        display: none;
+    }
+    @include media-breakpoint-up(md) {
+        .testimonial-name {
+            display: block;
+        }
+    }
+    .quotes {
+        max-width: 2rem;
+    }
+}

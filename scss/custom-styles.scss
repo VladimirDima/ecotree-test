@@ -14,7 +14,8 @@ $body-color: #333;
 $body-bg: #fff;
 $border-radius: .4rem;
 $success: #7952b3;
-$green:#429A2F;
+$cta-green:#429A2F;
+$primary:#F2F9F2;
 @import "bootstrap/scss/functions"; // Required
 @import "bootstrap/scss/variables"; // Required
 @import "bootstrap/scss/mixins"; // Required
@@ -34,7 +35,7 @@ $green:#429A2F;
 // @import "bootstrap/scss/custom-forms";
 // @import "bootstrap/scss/nav";
 // @import "bootstrap/scss/navbar"; // Requires nav
-// @import "bootstrap/scss/card";
+@import "bootstrap/scss/card";
 // @import "bootstrap/scss/breadcrumb";
 // @import "bootstrap/scss/pagination";
 // @import "bootstrap/scss/badge";
@@ -54,19 +55,13 @@ $green:#429A2F;
 // @import "bootstrap/scss/print";
 //
 // Custom styles
-//
-@import "example-component";
-body {
-    padding: 3rem 1.5rem;
-}
-
+@import "testimonial-card";
 // Customising bootstrap default classes
 .btn-primary {
-    @include button-variant($green, darken($green, 0%));
+    @include button-variant($cta-green, darken($cta-green, 0%));
 }
 
-.rounded-circle {
-    width: 50px;
-    height: 50px;
-    overflow: hidden;
+// Custom css
+.green-section {
+    background: $primary;
 }
