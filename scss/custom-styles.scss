@@ -1,76 +1,133 @@
-// Override Bootstrap's Sass default variables
-//
-// Nearly all variables in Bootstrap are written with the `!default` flag.
-// This allows us to override the default values of those variables before
-// we import Bootstrap's source Sass files.
-//
-// Bringing in Bootstrap
-// Place variable overrides first, then import just the styles we need. 
-// Toggle global options
-$enable-gradients: true;
-$enable-shadows: true;
-// Customize some defaults
-$body-color: #333;
-$body-bg: #fff;
-$success: #7952b3;
-$cta-green:#429A2F;
-$primary:#F2F9F2;
-@import "bootstrap/scss/functions"; // Required
-@import "bootstrap/scss/variables"; // Required
-@import "bootstrap/scss/mixins"; // Required
-@import "bootstrap/scss/root"; // Required
-@import "bootstrap/scss/reboot"; // Required
-@import "bootstrap/scss/type";
-// @import "bootstrap/scss/images";
-// @import "bootstrap/scss/code";
-@import "bootstrap/scss/grid";
-// @import "bootstrap/scss/tables";
-// @import "bootstrap/scss/forms";
-@import "bootstrap/scss/buttons";
-@import "bootstrap/scss/transitions";
-// @import "bootstrap/scss/dropdown";
-// @import "bootstrap/scss/button-group";
-// @import "bootstrap/scss/input-group"; // Requires forms
-// @import "bootstrap/scss/custom-forms";
-// @import "bootstrap/scss/nav";
-// @import "bootstrap/scss/navbar"; // Requires nav
-@import "bootstrap/scss/card";
-// @import "bootstrap/scss/breadcrumb";
-// @import "bootstrap/scss/pagination";
-// @import "bootstrap/scss/badge";
-// @import "bootstrap/scss/jumbotron";
-// @import "bootstrap/scss/alert";
-// @import "bootstrap/scss/progress";
-// @import "bootstrap/scss/media";
-// @import "bootstrap/scss/list-group";
-// @import "bootstrap/scss/close";
-// @import "bootstrap/scss/toasts";
-@import "bootstrap/scss/modal"; // Requires transitions
-// @import "bootstrap/scss/tooltip";
-// @import "bootstrap/scss/popover";
-// @import "bootstrap/scss/carousel";
-// @import "bootstrap/scss/spinners";
-@import "bootstrap/scss/utilities";
-// @import "bootstrap/scss/print";
-//
-// Custom styles
-@import "testimonial-card";
-@import "custom-utility-classes";
-// Customising bootstrap default classes
-.btn-primary {
-    @include button-variant($cta-green, darken($cta-green, 0%));
-}
-
-// Custom css
-.green-section {
-    background: $primary;
-}
-
-// How it works section
-.line {
-    display: none;
-    right: 20%;
-    @include media-breakpoint-up(md) {
-        display: block;
+    // Override Bootstrap's Sass default variables
+    //
+    // Nearly all variables in Bootstrap are written with the `!default` flag.
+    // This allows us to override the default values of those variables before
+    // we import Bootstrap's source Sass files.
+    //
+    // Bringing in Bootstrap
+    // Toggle global options
+    $enable-gradients: true;
+    $enable-shadows: true;
+    @import "bootstrap/scss/functions"; // Required
+    @import "bootstrap/scss/variables"; // Required
+    @import "custom-variables"; // Overriding default bootstrap variables
+    @import "bootstrap/scss/mixins"; // Required
+    @import "bootstrap/scss/root"; // Required
+    @import "bootstrap/scss/reboot"; // Required
+    @import "bootstrap/scss/type";
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+    $font-family-sans-serif:'Montserrat',
+    sans-serif;
+    // @import "bootstrap/scss/images";
+    // @import "bootstrap/scss/code";
+    @import "bootstrap/scss/grid";
+    // @import "bootstrap/scss/tables";
+    // @import "bootstrap/scss/forms";
+    @import "bootstrap/scss/buttons";
+    @import "bootstrap/scss/transitions";
+    // @import "bootstrap/scss/dropdown";
+    // @import "bootstrap/scss/button-group";
+    // @import "bootstrap/scss/input-group"; // Requires forms
+    // @import "bootstrap/scss/custom-forms";
+    // @import "bootstrap/scss/nav";
+    // @import "bootstrap/scss/navbar"; // Requires nav
+    @import "bootstrap/scss/card";
+    // @import "bootstrap/scss/breadcrumb";
+    // @import "bootstrap/scss/pagination";
+    // @import "bootstrap/scss/badge";
+    // @import "bootstrap/scss/jumbotron";
+    // @import "bootstrap/scss/alert";
+    // @import "bootstrap/scss/progress";
+    // @import "bootstrap/scss/media";
+    // @import "bootstrap/scss/list-group";
+    // @import "bootstrap/scss/close";
+    // @import "bootstrap/scss/toasts";
+    @import "bootstrap/scss/modal"; // Requires transitions
+    // @import "bootstrap/scss/tooltip";
+    // @import "bootstrap/scss/popover";
+    // @import "bootstrap/scss/carousel";
+    // @import "bootstrap/scss/spinners";
+    @import "bootstrap/scss/utilities";
+    // @import "bootstrap/scss/print";
+    //
+    // Custom styles
+    @import "testimonial-card";
+    @import "custom-utility-classes";
+    // Customising bootstrap default classes
+    .btn-primary {
+        @include button-variant($cta-green,
+        darken($cta-green, 0%));
     }
-}
+    
+    body {
+        font-family: $font-family-sans-serif;
+    }
+    
+    // Custom css
+    // How it works section
+    .line {
+        display: none;
+        right: 20%;
+        @include media-breakpoint-up(md) {
+            display: block;
+        }
+    }
+    
+    .mobile-line {
+        display: block;
+        @include media-breakpoint-up(md) {
+            display: none;
+        }
+    }
+    
+    .how-it-works-card {
+        .first-step,
+        .second-step,
+        .third-step {
+            min-height: 15rem;
+        }
+        .first-step {
+            background: url('./../img/graphics/1.svg') no-repeat right top;
+        }
+        .second-step {
+            background: url('./../img/graphics/2.svg') no-repeat left top;
+            @include media-breakpoint-up(md) {
+                background: url('./../img/graphics/2.svg') no-repeat right top;
+            }
+        }
+        .third-step {
+            background: url('./../img/graphics/3.svg') no-repeat right top;
+        }
+        .how-it-works-icon {
+            width: 50px;
+        }
+    }
+    
+    //     transform this into BEM and wherver else it applies
+    //     <img class="author-bio__image" src="https://cdn-images-1.medium.com/max/1600/0*o3c1g40EXj65Fq9k." alt="">
+    //   <div class="author-bio__content">
+    //     <h2 class="author-bio__name">Adam Wathan</h2>
+    //     <p class="author-bio__body">
+    .how-it-works-img-wrapper-inverted {
+        -moz-box-ordinal-group: 2;
+        -webkit-box-ordinal-group: 2;
+        -webkit-order: 2;
+        -ms-flex-order: 2;
+        order: 2;
+        @include media-breakpoint-up(md) {
+            order: 1;
+        }
+    }
+    
+    .how-it-works-text-inverted {
+        -moz-box-ordinal-group: 1;
+        -webkit-box-ordinal-group: 1;
+        -webkit-order: 1;
+        -ms-flex-order: 1;
+        order: 1;
+        text-align: right;
+        @include media-breakpoint-up(md) {
+            order: 2;
+            text-align: left;
+        }
+    }
