@@ -16,7 +16,7 @@
     @import "bootstrap/scss/reboot"; // Required
     @import "bootstrap/scss/type";
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-    $font-family-sans-serif:'Montserrat',
+    $font-family-base:'Montserrat',
     sans-serif;
     // @import "bootstrap/scss/images";
     // @import "bootstrap/scss/code";
@@ -60,11 +60,18 @@
     }
     
     body {
-        font-family: $font-family-sans-serif;
+        font-family: $font-family-base;
     }
     
     // Custom css
     // How it works section
+    .how-it-works {
+        max-width: 400px;
+        @include media-breakpoint-up(md) {
+            max-width: initial;
+        }
+    }
+    
     .line {
         display: none;
         right: 20%;
@@ -75,6 +82,13 @@
     
     .mobile-line {
         display: block;
+        top: -35px;
+        max-width: 390px;
+        left: 50%;
+        transform: translateX(-50%);
+        @include media-breakpoint-up(sm) {
+            top: -70px;
+        }
         @include media-breakpoint-up(md) {
             display: none;
         }
@@ -99,7 +113,10 @@
             background: url('./../img/graphics/3.svg') no-repeat right top;
         }
         .how-it-works-icon {
-            width: 50px;
+            width: 60px;
+            @include media-breakpoint-up(md) {
+                width: initial;
+            }
         }
     }
     
