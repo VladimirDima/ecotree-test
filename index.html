@@ -12,10 +12,17 @@
     <!-- Testimonials section -->
     <section class="green-section">
         <div class="container pt-5">
-            <div class="row centerrow d-flex mb-n5">
-                <div class="col-md-6">
+            <div class="row centerrow justify-content-between d-flex mb-n5">
+                <div class="col-md-5">
                     <div class="text-center d-md-none">
-                        <img src="./assets/img/graphics/short-line.svg" alt="">
+                        <!-- short-line -->
+                        <svg width="56px" height="5px" viewBox="0 0 56 5">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                                <g id="Artboard" transform="translate(-90.000000, -83.000000)" stroke="#429A2F" stroke-width="5">
+                                    <line x1="92.5" y1="85.5" x2="143.5" y2="85.5" id="Line"></line>
+                                </g>
+                            </g>
+                        </svg>
                     </div>
                     <div class="text-center text-md-left text-muted text-uppercase my-2">Testimonials</div>
                     <!-- add hidden h1 with name of company  use overflow hidden-->
@@ -24,33 +31,61 @@
                     <!-- add title atr for screen readers -->
                     <a href="#" class="btn custom-btn-primary mt-md-3 mb-5 arrow">See more</a>
                 </div>
-                <div class="col-md-6 mb-n6">
+                <div class="col-md-1 text-center d-none d-lg-block">
+                    <!-- dots separator -->
+                    <svg width="11" height="91" viewBox="0 0 11 91" class="mt-5">
+                        <defs>
+                          <style>
+                            .a {
+                              fill: #429a2f;
+                            }
+                          </style>
+                        </defs>
+                        <g transform="translate(-0.106 0.284)">
+                          <rect class="a" width="11" height="45" rx="5.5" transform="translate(0.106 -0.284)" />
+                          <path class="a" d="M5.5,0A5.5,5.5,0,0,1,11,5.5v8a5.5,5.5,0,0,1-11,0v-8A5.5,5.5,0,0,1,5.5,0Z" transform="translate(0.106 48.716)" />
+                          <path class="a" d="M5.5,0A5.5,5.5,0,0,1,11,5.5v8a5.5,5.5,0,0,1-11,0v-8A5.5,5.5,0,0,1,5.5,0Z" transform="translate(0.106 71.716)" />
+                        </g>
+                      </svg>
+                </div>
+                <div class="col-md-5 mb-n6">
                     <div class="card bg-white rounded mb-4 mb-md-5 border-0 shadow-lg">
-                        <div class="card-body d-md-flex">
+                        <div class="card-body d-lg-flex">
                             <div class="testimonial-card-img-wrapper text-center ml-auto mr-auto">
-                                <!-- <symbol id="my-icon" viewBox="0 0 30 30">
-                                     icon content / shapes here 
-                                </symbol>
-
-                                <use xlink:href="#my-icon" x="100" y="300" /> -->
-                                <img src="./assets/img/avatar/baltazar.png" class="avatar-img rounded-circle text-center ml-auto mr-auto" alt="">
+                                <img src="./assets/img/avatar/baltazar.png" class="avatar-img rounded-circle text-center ml-auto mr-auto" alt="headshot of a man called baltazar">
                                 <div class="card-title font-weight-bold mt-2 testimonial-name-mobile">Baltazar</div>
                             </div>
                             <div class="d-md-flex flex-md-column testimonial-card-content">
-                                <img src="./assets/img/graphics/quotation-marks.svg" class="quotes mb-3" alt="">
+                                <!-- quotes -->
+                                <svg width="99px" height="30px" viewBox="0 0 99 81" class="quotes mb-3">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="quotation-marks" transform="translate(49.500000, 40.500000) scale(-1, 1) translate(-49.500000, -40.500000) " fill="#429A2F" fill-rule="nonzero">
+                                            <path d="M96.76,32.603 C91.511,13.831 78.562,0.204 65.975,0.204 C64.964,0.204 63.954,0.292 62.97,0.466 C62.412,0.564 61.924,0.892 61.622,1.368 C61.321,1.847 61.236,2.429 61.389,2.973 L63.98,12.241 C64.23,13.136 65.093,13.741 65.99,13.7 L66.196,13.696 C70.864,13.696 79.395,20.692 83.744,36.241 C83.916,36.858 84.079,37.489 84.236,38.147 C79.354,35.731 73.53,35.172 68.256,36.641 C56.358,39.97 49.388,52.356 52.714,64.252 C55.41,73.891 64.277,80.625 74.277,80.625 C76.314,80.625 78.348,80.344 80.323,79.791 C88.169,77.598 94.068,71.084 96.934,61.453 C99.521,52.764 99.456,42.249 96.76,32.603 Z" id="Path"></path>
+                                            <path d="M14.088,0.206 C13.079,0.206 12.068,0.292 11.085,0.466 C10.528,0.562 10.039,0.892 9.738,1.368 C9.437,1.847 9.352,2.429 9.504,2.973 L12.096,12.241 C12.346,13.136 13.193,13.741 14.106,13.7 L14.31,13.696 C18.978,13.696 27.51,20.692 31.859,36.241 C32.032,36.862 32.195,37.493 32.351,38.147 C27.467,35.731 21.645,35.172 16.371,36.641 C4.475,39.97 -2.497,52.356 0.831,64.252 C3.527,73.891 12.394,80.625 22.394,80.625 C24.431,80.625 26.465,80.344 28.441,79.791 C36.286,77.598 42.185,71.084 45.052,61.453 C47.638,52.764 47.574,42.248 44.877,32.601 C39.625,13.831 26.678,0.206 14.088,0.206 Z" id="Path"></path>
+                                        </g>
+                                    </g>
+                                </svg>
                                 <div class="order-3 font-weight-bold mt-2 testimonial-name">Baltazar</div>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod ligula et mollis</p>
                             </div>
                         </div>
                     </div>
                     <div class="card d-none d-md-flex bg-white rounded mb-4 mb-md-5 border-0 shadow-lg">
-                        <div class="card-body d-md-flex">
+                        <div class="card-body d-lg-flex">
                             <div class="testimonial-card-img-wrapper text-center ml-auto mr-auto">
-                                <img src="./assets/img/avatar/bruno.png" class="avatar-img rounded-circle text-center ml-auto mr-auto" alt="">
+                                <img src="./assets/img/avatar/bruno.png" class="avatar-img rounded-circle text-center ml-auto mr-auto" alt="headshot of a man called bruno">
                                 <div class="card-title font-weight-bold mt-2 testimonial-name-mobile">Bruno</div>
                             </div>
                             <div class="d-md-flex flex-md-column testimonial-card-content">
-                                <img src="./assets/img/graphics/quotation-marks.svg" class="quotes mb-3" alt="">
+                                <!-- quotes -->
+                                <svg width="99px" height="30px" viewBox="0 0 99 81" class="quotes mb-3">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="quotation-marks" transform="translate(49.500000, 40.500000) scale(-1, 1) translate(-49.500000, -40.500000) " fill="#429A2F" fill-rule="nonzero">
+                                            <path d="M96.76,32.603 C91.511,13.831 78.562,0.204 65.975,0.204 C64.964,0.204 63.954,0.292 62.97,0.466 C62.412,0.564 61.924,0.892 61.622,1.368 C61.321,1.847 61.236,2.429 61.389,2.973 L63.98,12.241 C64.23,13.136 65.093,13.741 65.99,13.7 L66.196,13.696 C70.864,13.696 79.395,20.692 83.744,36.241 C83.916,36.858 84.079,37.489 84.236,38.147 C79.354,35.731 73.53,35.172 68.256,36.641 C56.358,39.97 49.388,52.356 52.714,64.252 C55.41,73.891 64.277,80.625 74.277,80.625 C76.314,80.625 78.348,80.344 80.323,79.791 C88.169,77.598 94.068,71.084 96.934,61.453 C99.521,52.764 99.456,42.249 96.76,32.603 Z" id="Path"></path>
+                                            <path d="M14.088,0.206 C13.079,0.206 12.068,0.292 11.085,0.466 C10.528,0.562 10.039,0.892 9.738,1.368 C9.437,1.847 9.352,2.429 9.504,2.973 L12.096,12.241 C12.346,13.136 13.193,13.741 14.106,13.7 L14.31,13.696 C18.978,13.696 27.51,20.692 31.859,36.241 C32.032,36.862 32.195,37.493 32.351,38.147 C27.467,35.731 21.645,35.172 16.371,36.641 C4.475,39.97 -2.497,52.356 0.831,64.252 C3.527,73.891 12.394,80.625 22.394,80.625 C24.431,80.625 26.465,80.344 28.441,79.791 C36.286,77.598 42.185,71.084 45.052,61.453 C47.638,52.764 47.574,42.248 44.877,32.601 C39.625,13.831 26.678,0.206 14.088,0.206 Z" id="Path"></path>
+                                        </g>
+                                    </g>
+                                </svg>
                                 <div class="order-3 font-weight-bold mt-2 testimonial-name">Bruno</div>
                                 <div class="quotes"></div>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod ligula et mollis</p>
@@ -58,13 +93,21 @@
                         </div>
                     </div>
                     <div class="card d-md-flex bg-white rounded border-0 shadow-lg">
-                        <div class="card-body d-md-flex">
+                        <div class="card-body d-lg-flex">
                             <div class="testimonial-card-img-wrapper text-center ml-auto mr-auto">
-                                <img src="./assets/img/avatar/lola.png" class="avatar-img rounded-circle text-center ml-auto mr-auto" alt="">
+                                <img src="./assets/img/avatar/lola.png" class="avatar-img rounded-circle text-center ml-auto mr-auto" alt="headshot of a woman called lola">
                                 <div class="order-3 font-weight-bold mt-2 testimonial-name-mobile">Lola</div>
                             </div>
                             <div class="d-md-flex flex-md-column testimonial-card-content">
-                                <img src="./assets/img/graphics/quotation-marks.svg" class="quotes mb-3" alt="">
+                                <!-- quotes -->
+                                <svg width="99px" height="30px" viewBox="0 0 99 81" class="quotes mb-3">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="quotation-marks" transform="translate(49.500000, 40.500000) scale(-1, 1) translate(-49.500000, -40.500000) " fill="#429A2F" fill-rule="nonzero">
+                                            <path d="M96.76,32.603 C91.511,13.831 78.562,0.204 65.975,0.204 C64.964,0.204 63.954,0.292 62.97,0.466 C62.412,0.564 61.924,0.892 61.622,1.368 C61.321,1.847 61.236,2.429 61.389,2.973 L63.98,12.241 C64.23,13.136 65.093,13.741 65.99,13.7 L66.196,13.696 C70.864,13.696 79.395,20.692 83.744,36.241 C83.916,36.858 84.079,37.489 84.236,38.147 C79.354,35.731 73.53,35.172 68.256,36.641 C56.358,39.97 49.388,52.356 52.714,64.252 C55.41,73.891 64.277,80.625 74.277,80.625 C76.314,80.625 78.348,80.344 80.323,79.791 C88.169,77.598 94.068,71.084 96.934,61.453 C99.521,52.764 99.456,42.249 96.76,32.603 Z" id="Path"></path>
+                                            <path d="M14.088,0.206 C13.079,0.206 12.068,0.292 11.085,0.466 C10.528,0.562 10.039,0.892 9.738,1.368 C9.437,1.847 9.352,2.429 9.504,2.973 L12.096,12.241 C12.346,13.136 13.193,13.741 14.106,13.7 L14.31,13.696 C18.978,13.696 27.51,20.692 31.859,36.241 C32.032,36.862 32.195,37.493 32.351,38.147 C27.467,35.731 21.645,35.172 16.371,36.641 C4.475,39.97 -2.497,52.356 0.831,64.252 C3.527,73.891 12.394,80.625 22.394,80.625 C24.431,80.625 26.465,80.344 28.441,79.791 C36.286,77.598 42.185,71.084 45.052,61.453 C47.638,52.764 47.574,42.248 44.877,32.601 C39.625,13.831 26.678,0.206 14.088,0.206 Z" id="Path"></path>
+                                        </g>
+                                    </g>
+                                </svg>
                                 <div class="order-3 font-weight-bold mt-2 testimonial-name">Lola</div>
                                 <div class="quotes"></div>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod ligula et mollis</p>
@@ -80,21 +123,64 @@
     <section class="mt-16 mt-md-16 white-section">
         <div class="container">
             <div class="my-5">
-                <div class="text-center d-md-none">
-                    <img src="./assets/img/graphics/short-line.svg" alt="">
+                <div class="text-center text-md-left">
+                    <!-- short line  -->
+                    <svg width="56px" height="5px" viewBox="0 0 56 5">
+                        <title>Line</title>
+                        <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round">
+                            <g transform="translate(-90.000000, -83.000000)" stroke="#429A2F" stroke-width="5">
+                                <line x1="92.5" y1="85.5" x2="143.5" y2="85.5" id="Line"></line>
+                            </g>
+                        </g>
+                    </svg>
                 </div>
                 <div class="section-title text-center text-md-left text-uppercase my-2">How it works</div>
                 <h3 class="text-center text-md-left">It's as simple as 1, 2, Tree!</h3>
             </div>
             <div class="container flex-wrap position-relative how-it-works">
-                <!-- turn this into the img with media queries in it -->
-                <img src="./assets/img/graphics/line-lg.svg" class="position-absolute line" alt="">
-                <img src="./assets/img/graphics/line-mobile.svg" class="position-absolute w-100 mobile-line" alt="">
+                <!-- animated line for desktop -->
+                <svg viewBox="0 0 111 29" class="position-absolute line" xmlns:xlink="http://www.w3.org/1999/xlink">
+                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                        <g id="Group" transform="translate(0.044548, 1.048239)" stroke="#429A2F" stroke-width="0.5">
+                            <path d="M31.0572819,19.4384955 C31.0572819,19.4384955 16.3416298,6.22788598 0.810790649,15.1930291" id="Path-2"></path>
+                            <path d="M31,19.3789392 C31,19.3789392 37.9482378,26.1366499 44.1730573,25.9151321 C50.3978769,25.6936143 53.5383567,16.335413 61.0530191,16.7783941 C68.5676815,17.2213753 71.371707,19.6578532 75.8019745,15.1171195 C78.9474777,11.8932285 82.2060892,5.79418449 87.8915329,2.60403354 C90.2059193,1.30545073 92.9297919,0.489530398 96.2149554,0.553740042 C96.3271253,0.498360587 103.449248,1.3289979 108.945019,0" id="Path"></path>
+                        </g>
+                    </g>
+                </svg>
+                <!-- mobile line -->
+                <svg viewBox="200 0 380 1100" class="position-absolute w-100 mobile-line">
+                    <defs>
+                      <style>
+                        .a-l {
+                          fill: none;
+                          stroke: #429a2f;
+                          stroke-width: 8px;
+                        }
+                      </style>
+                    </defs>
+                    <path class="a-l" d="M-687.765,5085.164s64.691,191.863,163.258,187.784c139.759-15.987,117.954-427.395,244.465-441.392,168.485-26.149,301.182,341.143,441.116,255.7,93.994-72.978,113.131-127.511,113.659-191.433" transform="matrix(-0.259, 0.966, -0.966, -0.259, 5169.344, 2033.782)" />
+                  </svg>
+                <!-- <img src="./assets/img/graphics/line-mobile.svg" class="position-absolute w-100 mobile-line" alt=""> -->
                 <div class="row my-6 my-sm-7 my-md-0 mt-md-n7 how-it-works-card order-3">
                     <div class="col-md-4 d-flex align-items-end first-step">
                         <div class="d-flex align-items-start align-items-md-start flex-md-column pl-5 pl-md-0">
                             <div class="how-it-works-img-wrapper">
-                                <img src="./assets/img/icons/tree-icon.svg" class="rounded-1 mr-2 shadow-lg mb-5 how-it-works-icon" alt="">
+                                <!-- tree icon -->
+                                <svg width="69px" height="69px" viewBox="0 0 69 69" class="rounded-1 mr-2 shadow-lg mb-5 how-it-works-icon">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="tree-icon" fill-rule="nonzero">
+                                            <g id="Group" fill="#FFFFFF">
+                                                <path d="M18.7285714,0 L49.2857143,0 C59.6292187,0 68.0142857,8.38506704 68.0142857,18.7285714 L68.0142857,49.2857143 C68.0142857,59.6292187 59.6292187,68.0142857 49.2857143,68.0142857 L18.7285714,68.0142857 C8.38506704,68.0142857 0,59.6292187 0,49.2857143 L0,18.7285714 C0,8.38506704 8.38506704,0 18.7285714,0 Z" id="Path"></path>
+                                            </g>
+                                            <g id="Path" transform="translate(21.370286, 20.752243)" fill="#429A2F">
+                                                <path d="M7.56338571,26.6724429 C7.56551668,26.9012258 7.4755065,27.1212445 7.31363285,27.2829327 C7.15175919,27.444621 6.93163746,27.5343789 6.70285714,27.5320773 C6.23091932,27.526117 5.85007075,27.1443929 5.84528571,26.6724429 L5.84528571,10.3243714 L7.56338571,10.3243714 L7.56338571,26.6724429 Z"></path>
+                                                <path d="M3.72107143,3.12372857 C2.31433971,4.06505596 1.46527064,5.64210946 1.45392857,7.3347 C1.45393208,7.57815842 1.47172229,7.82129127 1.50715714,8.06215714 C0.534104061,9.21048103 -0.000577564101,10.6664495 -0.00197142857,12.1716 C0.0852221785,15.8864867 3.16530659,18.8284923 6.88028571,18.7453286 C10.5952648,18.8284923 13.6753493,15.8864867 13.7625429,12.1716 C13.7608735,10.6663253 13.2258374,9.21034261 12.2524286,8.06215714 C12.2878704,7.82129204 12.3056607,7.57815866 12.3056571,7.3347 C12.2943151,5.64210946 11.445246,4.06505596 10.0385143,3.12372857 C10.0385143,3.08955715 10.0385143,3.0567 10.0385143,3.02515714 C10.0008068,1.31886834 8.58861035,-0.0346703249 6.88225714,3.43692089e-16 C5.17473998,-0.0385519586 3.75892877,1.31372644 3.7191,3.02121429 C3.7191,3.05538571 3.71975714,3.08955715 3.72107143,3.12372857 Z"></path>
+                                                <path d="M19.6098,26.6724429 C19.611931,26.9012258 19.5219207,27.1212445 19.3600471,27.2829327 C19.1981735,27.444621 18.9780518,27.5343789 18.7492714,27.5320773 C18.2769486,27.5266484 17.8955095,27.1447715 17.8907143,26.6724429 L17.8907143,10.3243714 L19.6117714,10.3243714 L19.6098,26.6724429 Z"></path>
+                                                <path d="M16.3815857,10.9473429 C15.3288769,11.6532867 14.6934174,12.8341635 14.6841857,14.1016286 C14.6840377,14.2840462 14.6972156,14.4662311 14.7236143,14.6467286 C13.9919458,15.5094109 13.5902407,16.6037953 13.5900429,17.7349714 C13.6567756,20.5204753 15.9666208,22.7257887 18.7522286,22.6635429 C21.5378363,22.7257887 23.8476816,20.5204753 23.9144143,17.7349714 C23.9130502,16.6054902 23.5114165,15.5130466 22.7808429,14.6516571 C22.8072976,14.4711657 22.8204758,14.2889769 22.8202714,14.1065571 C22.8110397,12.8390921 22.1755803,11.6582153 21.1228714,10.9522714 C21.1228714,10.9266429 21.1228714,10.9010143 21.1228714,10.8753857 C21.0597258,9.61102846 20.0161903,8.61830928 18.7502571,8.61830928 C17.484324,8.61830928 16.4407885,9.61102846 16.3776429,10.8753857 C16.3796143,10.8960857 16.3796143,10.9217143 16.3815857,10.9473429 Z"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
                             </div>
                             <div class="how-it-works-text">
                                 <h5 class="mb-4 font-weight-bold how-it-works-title">Get a tree</h5>
@@ -108,7 +194,19 @@
                     <div class="col-md-4 d-flex align-items-end second-step">
                         <div class="d-flex align-items-start align-items-md-start flex-md-column my-2 pr-4 pr-sm-5">
                             <div class="how-it-works-img-wrapper-inverted">
-                                <img src="./assets/img/icons/pin-icon.svg" class="rounded-1 shadow-lg mb-5 ml-3 ml-md-0 how-it-works-icon" alt="">
+                                <!-- pin icon -->
+                                <svg width="69px" height="69px" viewBox="0 0 69 69" class="rounded-1 shadow-lg mb-5 ml-3 ml-md-0 how-it-works-icon">
+                                    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="pin-icon" fill-rule="nonzero">
+                                            <g id="Group" fill="#FFFFFF">
+                                                <path d="M19,0 L50,0 C60.4934102,0 69,8.50658975 69,19 L69,50 C69,60.4934102 60.4934102,69 50,69 L19,69 C8.50658975,69 0,60.4934102 0,50 L0,19 C0,8.50658975 8.50658975,0 19,0 Z" id="Path"></path>
+                                            </g>
+                                            <g id="Group" transform="translate(22.500000, 18.000000)" fill="#FFB552">
+                                                <path d="M12.211,-3.84854797e-07 C9.10496838,-3.84854797e-07 6.12607558,1.23348352 3.92977955,3.42977955 C1.73348352,5.62607558 0.499734743,8.60496838 0.499999957,11.711 C0.502639517,14.3254221 1.26487093,16.8827536 2.694,19.072 L12.212,33.46 L21.73,19.072 C23.1639643,16.8849976 23.9266352,14.3261914 23.9240068,11.711 C23.9242654,8.60462179 22.6902421,5.6254258 20.4935134,3.42907225 C18.2967848,1.2327187 15.3173781,-0.000795838377 12.211,-3.84854797e-07 Z M12.211,16.173 C9.74725773,16.173 7.75,14.1757423 7.75,11.712 C7.75,9.24825773 9.74725773,7.251 12.211,7.251 C14.6747423,7.251 16.672,9.24825773 16.672,11.712 C16.6643142,14.1725517 14.6715517,16.1653142 12.211,16.173 Z" id="Shape"></path>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
                             </div>
                             <div class="how-it-works-text-inverted">
                                 <h5 class="mb-4 font-weight-bold how-it-works-title">Follow</h5>
@@ -124,7 +222,22 @@
                     <div class="col-md-4 d-flex align-items-end third-step">
                         <div class="d-flex align-items-start align-items-md-start flex-md-column pl-5 pl-md-0">
                             <div class="how-it-works-img-wrapper">
-                                <img src="./assets/img/icons/graph-icon.svg" class="rounded-1 shadow-lg mb-5 mr-2 how-it-works-icon" alt="">
+                                <!-- graph icon -->
+                                <svg width="69px" height="69px" viewBox="0 0 69 69" class="rounded-1 shadow-lg mb-5 mr-2 how-it-works-icon">
+                                    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                        <g id="graph-icon" fill-rule="nonzero">
+                                            <g id="Group" fill="#FFFFFF">
+                                                <path d="M19,0 L50,0 C60.4934102,0 69,8.50658975 69,19 L69,50 C69,60.4934102 60.4934102,69 50,69 L19,69 C8.50658975,69 0,60.4934102 0,50 L0,19 C0,8.50658975 8.50658975,0 19,0 Z" id="Path"></path>
+                                            </g>
+                                            <g id="Group" transform="translate(21.617000, 23.718000)" fill="#389B6C">
+                                                <g transform="translate(0.063000, 0.016000)">
+                                                    <path d="M25.285,3.746 L25.285,0.468 C25.285,0.343878683 25.235693,0.224841052 25.147926,0.137074026 C25.0601589,0.0493070013 24.9411213,0 24.817,0 L0.468,0 C0.209530737,0 0,0.209530737 0,0.468 L0,3.746 L25.285,3.746 Z" id="Path"></path>
+                                                    <path d="M0,4.682 L0,21.07 C0,21.3284693 0.209530737,21.538 0.468,21.538 L24.817,21.538 C24.9411213,21.538 25.0601589,21.488693 25.147926,21.400926 C25.235693,21.3131589 25.285,21.1941213 25.285,21.07 L25.285,4.682 L0,4.682 Z M22.382,12.923 C22.3077546,13.0225258 22.1969303,13.0883863 22.0740212,13.1060252 C21.9511121,13.1236641 21.8262386,13.0916289 21.727,13.017 L18.377,10.504 L14.905,15.711 C14.8163224,15.8471201 14.6622967,15.9262247 14.5,15.919 C14.3373195,15.9133738 14.1892481,15.8236221 14.109,15.682 L10.769,9.838 L7.43,15.682 C7.3633607,15.7984742 7.24993004,15.8807395 7.11851757,15.9079019 C6.9871051,15.9350643 6.85035516,15.9045103 6.743,15.824 L3,13.017 C2.86620403,12.9166084 2.79612975,12.7524634 2.81617347,12.5863969 C2.83621718,12.4203303 2.94333378,12.2775717 3.09717347,12.2118968 C3.25101317,12.146222 3.42820404,12.1676084 3.562,12.268 L6.884,14.759 L10.367,8.659 C10.4571268,8.52239418 10.6098419,8.44019163 10.7735,8.44019163 C10.9371581,8.44019163 11.0898732,8.52239418 11.18,8.659 L14.55,14.559 L17.876,9.571 C17.9473183,9.46370419 18.0597145,9.39055466 18.186699,9.36879131 C18.3136834,9.34702795 18.4440233,9.37857593 18.547,9.456 L22.293,12.265 C22.3926293,12.340043 22.4580989,12.4518227 22.4748173,12.5754267 C22.4915358,12.6990307 22.4581138,12.8241863 22.382,12.923 L22.382,12.923 Z" id="Shape"></path>
+                                                </g>
+                                            </g>
+                                        </g>
+                                    </g>
+                                </svg>
                             </div>
                             <div class="how-it-works-text">
                                 <h5 class="mb-4 font-weight-bold how-it-works-title">Gain</h5>
@@ -137,8 +250,7 @@
         </div>
     </section>
 
-    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
-    <script type="module" src="assets/js/starter.js"></script>
+    <script type="module" src="assets/js/animate.js"></script>
 </body>
 
 </html>

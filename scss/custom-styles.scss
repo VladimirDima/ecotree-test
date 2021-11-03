@@ -1,134 +1,148 @@
-    // Override Bootstrap's Sass default variables
-    //
-    // Nearly all variables in Bootstrap are written with the `!default` flag.
-    // This allows us to override the default values of those variables before
-    // we import Bootstrap's source Sass files.
-    //
-    // Bringing in Bootstrap
-    // Toggle global options
-    $enable-gradients: true;
-    $enable-shadows: true;
-    $enable-negative-margins: true;
-    @import "bootstrap/scss/functions"; // Required
-    @import "bootstrap/scss/variables"; // Required
-    @import "custom-variables"; // Overriding default bootstrap variables
-    @import "bootstrap/scss/mixins"; // Required
-    @import "bootstrap/scss/root"; // Required
-    @import "bootstrap/scss/reboot"; // Required
-    @import "bootstrap/scss/type";
-    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
-    $font-family-base:'Montserrat',
-    sans-serif;
-    @import "bootstrap/scss/grid";
-    @import "bootstrap/scss/buttons";
-    @import "bootstrap/scss/transitions";
-    @import "bootstrap/scss/card";
-    @import "bootstrap/scss/modal"; // Requires transitions
-    @import "bootstrap/scss/utilities";
-    // Custom styles
-    @import "testimonial-card";
-    @import "buttons";
-    @import "custom-utility-classes";
-    // Customising bootstrap default classes
-    body {
-        font-family: $font-family-base;
-    }
-    
-    // Custom css
-    // How it works section
-    .how-it-works {
-        max-width: 400px;
-        @include media-breakpoint-up(md) {
-            max-width: initial;
+        // Override Bootstrap's Sass default variables
+        //
+        // Nearly all variables in Bootstrap are written with the `!default` flag.
+        // This allows us to override the default values of those variables before
+        // we import Bootstrap's source Sass files.
+        //
+        // Bringing in Bootstrap
+        // Toggle global options
+        $enable-gradients: true;
+        $enable-shadows: true;
+        $enable-negative-margins: true;
+        @import "bootstrap/scss/functions"; // Required
+        @import "bootstrap/scss/variables"; // Required
+        @import "custom-variables"; // Overriding default bootstrap variables
+        @import "bootstrap/scss/mixins"; // Required
+        @import "bootstrap/scss/root"; // Required
+        @import "bootstrap/scss/reboot"; // Required
+        @import "bootstrap/scss/type";
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+        $font-family-base:'Montserrat',
+        sans-serif;
+        @import "bootstrap/scss/grid";
+        @import "bootstrap/scss/buttons";
+        @import "bootstrap/scss/transitions";
+        @import "bootstrap/scss/card";
+        @import "bootstrap/scss/modal"; // Requires transitions
+        @import "bootstrap/scss/utilities";
+        // Custom styles
+        @import "testimonial-card";
+        @import "buttons";
+        @import "custom-utility-classes";
+        // Customising bootstrap default classes
+        body {
+            font-family: $font-family-base;
         }
-    }
-    
-    .line {
-        display: none;
-        width: 140%;
-        right: 11%;
-        top: 9rem;
-        transform: rotate(-29deg);
-        @include media-breakpoint-up(md) {
-            display: block;
+        
+        // Custom css
+        // How it works section
+        .how-it-works {
+            max-width: 400px;
+            @include media-breakpoint-up(md) {
+                max-width: initial;
+            }
         }
-        @include media-breakpoint-up(lg) {
-            right: 20%;
-            top: 4rem;
-            transform: rotate(-14deg);
-        }
-        @include media-breakpoint-up(xl) {
-            right: 23%;
-            top: 2rem;
-            transform: rotate(-9deg);
-        }
-    }
-    
-    .mobile-line {
-        display: block;
-        top: -35px;
-        max-width: 390px;
-        left: 50%;
-        transform: translateX(-50%);
-        @include media-breakpoint-up(sm) {
-            top: -70px;
-        }
-        @include media-breakpoint-up(md) {
+        
+        .line {
             display: none;
-        }
-    }
-    
-    .how-it-works-card {
-        .first-step,
-        .second-step,
-        .third-step {
-            min-height: 15rem;
-        }
-        .first-step {
-            background: url('./../img/graphics/1.svg') no-repeat right top;
-        }
-        .second-step {
-            background: url('./../img/graphics/2.svg') no-repeat left top;
+            width: 140%;
+            right: 11%;
+            top: 9rem;
+            transform: rotate(-29deg);
+            stroke-dasharray: 450;
+            stroke-dashoffset: 450;
             @include media-breakpoint-up(md) {
-                background: url('./../img/graphics/2.svg') no-repeat right top;
+                display: block;
+            }
+            @include media-breakpoint-up(lg) {
+                right: 20%;
+                top: 4rem;
+                transform: rotate(-14deg);
+            }
+            @include media-breakpoint-up(xl) {
+                right: 23%;
+                top: 2rem;
+                transform: rotate(-9deg);
             }
         }
-        .third-step {
-            background: url('./../img/graphics/3.svg') no-repeat right top;
+        
+        .line-draw {
+            animation: draw 4s ease-in-out forwards;
         }
-        .how-it-works-icon {
-            width: 60px;
-            @include media-breakpoint-up(md) {
-                width: initial;
+        
+        @keyframes draw {
+            to {
+                stroke-dashoffset: 0;
             }
         }
-    }
-    
-    //     transform this into BEM and wherver else it applies
-    //     <img class="author-bio__image" src="https://cdn-images-1.medium.com/max/1600/0*o3c1g40EXj65Fq9k." alt="">
-    //   <div class="author-bio__content">
-    //     <h2 class="author-bio__name">Adam Wathan</h2>
-    //     <p class="author-bio__body">
-    .how-it-works-img-wrapper-inverted {
-        -moz-box-ordinal-group: 2;
-        -webkit-box-ordinal-group: 2;
-        -webkit-order: 2;
-        -ms-flex-order: 2;
-        order: 2;
-        @include media-breakpoint-up(md) {
-            order: 1;
+        
+        .mobile-line {
+            display: block;
+            top: -35px;
+            max-width: 390px;
+            left: 50%;
+            transform: translateX(-50%);
+            @include media-breakpoint-up(sm) {
+                top: -70px;
+            }
+            @include media-breakpoint-up(md) {
+                display: none;
+            }
         }
-    }
-    
-    .how-it-works-text-inverted {
-        -moz-box-ordinal-group: 1;
-        -webkit-box-ordinal-group: 1;
-        -webkit-order: 1;
-        -ms-flex-order: 1;
-        order: 1;
-        text-align: right;
-        @include media-breakpoint-up(md) {
+        
+        .how-it-works-card {
+            .first-step,
+            .second-step,
+            .third-step {
+                min-height: 15rem;
+            }
+            .first-step {
+                background: url('./../img/graphics/1.svg') no-repeat right top;
+            }
+            .second-step {
+                background: url('./../img/graphics/2.svg') no-repeat left top;
+                @include media-breakpoint-up(md) {
+                    background: url('./../img/graphics/2.svg') no-repeat right top;
+                }
+            }
+            .third-step {
+                background: url('./../img/graphics/3.svg') no-repeat right top;
+            }
+            .how-it-works-icon {
+                width: 60px;
+                height: 60px;
+                @include media-breakpoint-up(md) {
+                    width: initial;
+                    height: initial;
+                }
+            }
+        }
+        
+        //     transform this into BEM and wherver else it applies
+        //     <img class="author-bio__image" src="https://cdn-images-1.medium.com/max/1600/0*o3c1g40EXj65Fq9k." alt="">
+        //   <div class="author-bio__content">
+        //     <h2 class="author-bio__name">Adam Wathan</h2>
+        //     <p class="author-bio__body">
+        .how-it-works-img-wrapper-inverted {
+            -moz-box-ordinal-group: 2;
+            -webkit-box-ordinal-group: 2;
+            -webkit-order: 2;
+            -ms-flex-order: 2;
             order: 2;
-            text-align: left;
+            @include media-breakpoint-up(md) {
+                order: 1;
+            }
         }
-    }
+        
+        .how-it-works-text-inverted {
+            -moz-box-ordinal-group: 1;
+            -webkit-box-ordinal-group: 1;
+            -webkit-order: 1;
+            -ms-flex-order: 1;
+            order: 1;
+            text-align: right;
+            @include media-breakpoint-up(md) {
+                order: 2;
+                text-align: left;
+            }
+        }
