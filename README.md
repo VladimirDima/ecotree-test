@@ -6,7 +6,6 @@ npm-run-all
 ```shell
 # Clone the repo
 git clone https://github.com/VladimirDima/ecotree-test.git
-cd bootstrap-npm-starter
 
 # Install dependencies
 npm i
