@@ -11,7 +11,7 @@
 }
 
 //replace this with bootstrap mixin
-@media (min-width:768px) {
+@include media-breakpoint-up(md) {
     .flex-wrap {
         display: -moz-box;
         display: -webkit-box;
