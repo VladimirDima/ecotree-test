@@ -1,8 +1,11 @@
 // Editing the $spacers sass map in order to add more spacing options.
-$spacers: ( 0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3, 6: $spacer * 5, 7: $spacer * 6);
+$spacers: ( 0: 0, 1: $spacer * .25, 2: $spacer * .5, 3: $spacer, 4: $spacer * 1.5, 5: $spacer * 3, 6: $spacer * 5, 7: $spacer * 6, 8: $spacer * 8, 9: $spacer * 10, 16: $spacer * 16);
 // Overidding some default bootstrap variables.
-$body-color: #333;
+$primary:#F2F9F2;
+$headings-color:#474747;
+$body-color: #434343B5;
 $body-bg: #fff;
 $success: #7952b3;
+$muted:#CDCDCD;
 $cta-green:#429A2F;
-$primary:#F2F9F2;
+$cta-green-darken: #508045;

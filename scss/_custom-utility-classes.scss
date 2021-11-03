@@ -6,6 +6,10 @@
     border-radius: 1rem;
 }
 
+.text-muted {
+    color: $muted;
+}
+
 //replace this with bootstrap mixin
 @media (min-width:768px) {
     .flex-wrap {

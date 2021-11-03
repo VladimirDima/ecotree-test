@@ -11,52 +11,61 @@
 <body>
     <!-- Testimonials section -->
     <section class="green-section">
-        <div class="container py-5">
-            <div class="row centerrow d-flex">
+        <div class="container pt-5">
+            <div class="row centerrow d-flex mb-n5">
                 <div class="col-md-6">
-                    <div class="line-graphic"></div>
-                    <div class="section-title">Testimonials</div>
-                    <h1>Our customers love what we do !</h1>
-                    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod ligula et mollis sit amet, consectetur adipiscing elit.</h2>
-                    <a href="#" class="btn btn-primary mt-md-3 px-4 mb-5 main-cta">See more</a>
+                    <div class="text-center d-md-none">
+                        <img src="./assets/img/graphics/short-line.svg" alt="">
+                    </div>
+                    <div class="text-center text-md-left text-muted text-uppercase my-2">Testimonials</div>
+                    <!-- add hidden h1 with name of company  use overflow hidden-->
+                    <h2 class="font-weight-bold">Our customers love what we do !</h2>
+                    <p class="my-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod ligula et mollis sit amet, consectetur adipiscing elit.</p>
+                    <!-- add title atr for screen readers -->
+                    <a href="#" class="btn custom-btn-primary mt-md-3 mb-5 arrow">See more</a>
                 </div>
-                <div class="col-md-6">
-                    <div class="card d-md-flex bg-white rounded mb-4 border-0 shadow-lg">
-                        <div class="card-body">
+                <div class="col-md-6 mb-n6">
+                    <div class="card bg-white rounded mb-4 mb-md-5 border-0 shadow-lg">
+                        <div class="card-body d-md-flex">
                             <div class="testimonial-card-img-wrapper text-center ml-auto mr-auto">
+                                <!-- <symbol id="my-icon" viewBox="0 0 30 30">
+                                     icon content / shapes here 
+                                </symbol>
+
+                                <use xlink:href="#my-icon" x="100" y="300" /> -->
                                 <img src="./assets/img/avatar/baltazar.png" class="avatar-img rounded-circle text-center ml-auto mr-auto" alt="">
-                                <div class="card-title testimonial-name-mobile">Baltazar</div>
+                                <div class="card-title font-weight-bold mt-2 testimonial-name-mobile">Baltazar</div>
                             </div>
-                            <div class="testimonial-card-content">
+                            <div class="d-md-flex flex-md-column testimonial-card-content">
                                 <img src="./assets/img/graphics/quotation-marks.svg" class="quotes mb-3" alt="">
-                                <div class="testimonial-name">Baltazar</div>
+                                <div class="order-3 font-weight-bold mt-2 testimonial-name">Baltazar</div>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod ligula et mollis</p>
                             </div>
                         </div>
                     </div>
-                    <div class="card d-md-flex bg-white rounded mb-4 border-0 shadow-lg">
-                        <div class="card-body">
+                    <div class="card d-none d-md-flex bg-white rounded mb-4 mb-md-5 border-0 shadow-lg">
+                        <div class="card-body d-md-flex">
                             <div class="testimonial-card-img-wrapper text-center ml-auto mr-auto">
                                 <img src="./assets/img/avatar/bruno.png" class="avatar-img rounded-circle text-center ml-auto mr-auto" alt="">
-                                <div class="card-title testimonial-name-mobile">Bruno</div>
+                                <div class="card-title font-weight-bold mt-2 testimonial-name-mobile">Bruno</div>
                             </div>
-                            <div class="testimonial-card-content">
+                            <div class="d-md-flex flex-md-column testimonial-card-content">
                                 <img src="./assets/img/graphics/quotation-marks.svg" class="quotes mb-3" alt="">
-                                <div class="testimonial-name">Bruno</div>
+                                <div class="order-3 font-weight-bold mt-2 testimonial-name">Bruno</div>
                                 <div class="quotes"></div>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod ligula et mollis</p>
                             </div>
                         </div>
                     </div>
-                    <div class="card d-md-flex bg-white rounded mb-4 border-0 shadow-lg">
-                        <div class="card-body">
+                    <div class="card d-md-flex bg-white rounded border-0 shadow-lg">
+                        <div class="card-body d-md-flex">
                             <div class="testimonial-card-img-wrapper text-center ml-auto mr-auto">
                                 <img src="./assets/img/avatar/lola.png" class="avatar-img rounded-circle text-center ml-auto mr-auto" alt="">
-                                <div class="testimonial-name-mobile">Lola</div>
+                                <div class="order-3 font-weight-bold mt-2 testimonial-name-mobile">Lola</div>
                             </div>
-                            <div class="testimonial-card-content">
+                            <div class="d-md-flex flex-md-column testimonial-card-content">
                                 <img src="./assets/img/graphics/quotation-marks.svg" class="quotes mb-3" alt="">
-                                <div class="testimonial-name">Lola</div>
+                                <div class="order-3 font-weight-bold mt-2 testimonial-name">Lola</div>
                                 <div class="quotes"></div>
                                 <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris euismod ligula et mollis</p>
                             </div>
@@ -68,11 +77,13 @@
     </section>
 
     <!-- How it works section -->
-    <section class="white-section">
+    <section class="mt-16 mt-md-16 white-section">
         <div class="container">
             <div class="my-5">
-                <div class="line-graphic"></div>
-                <div class="section-title text-center text-md-left">How it works</div>
+                <div class="text-center d-md-none">
+                    <img src="./assets/img/graphics/short-line.svg" alt="">
+                </div>
+                <div class="section-title text-center text-md-left text-uppercase my-2">How it works</div>
                 <h3 class="text-center text-md-left">It's as simple as 1, 2, Tree!</h3>
             </div>
             <div class="container flex-wrap position-relative how-it-works">
