@@ -6,6 +6,7 @@ npm-run-all
 ```shell
 # Clone the repo
 git clone https://github.com/VladimirDima/ecotree-test.git
+cd ecotree-test
 
 # Install dependencies
 npm i
