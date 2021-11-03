@@ -1,3 +1,4 @@
+// Animating line svg stroke when it enters the viewport
 (() => {
     let ec = window.ec || {};
 
